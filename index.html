@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Douglas Martins</title>
+    <script>   
+        function mostrarAtivo(tag){
+        var tag_li = document.getElementById('menu');
+        var tag_a = tag_li.getElementsByTagName('a');
+        for (i=0; i<tag_a.length; i++ )
+        {
+           tag_a[i].style.color = "";
+        }
+           tag.style.color = "#004aad";
+        }
+     </script>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" type="image/png" href="images/iconLogo.png"/>
+</head>
+<body>
+    <header>
+        <img src="images/LogoDM.png" alt="Logo Douglas Martins Developer">
+        <nav id="menu">
+            <ul>
+                <li><a href="#" onclick="mostrarAtivo(this);">Home</a></li>                   
+                <li><a href="#" onclick="mostrarAtivo(this);">Sobre</a></li>
+                <li><a href="#" onclick="mostrarAtivo(this);">Projetos</a></li>
+                <li><a href="#" onclick="mostrarAtivo(this);">Cursos</a></li>
+                <li><a href="#" onclick="mostrarAtivo(this);">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <p>Conteúdo</p>
+        <p>Conteúdo</p>
+        <p>Conteúdo</p>
+        <p>Conteúdo</p>
+        <p>Conteúdo</p>
+        <p>Conteúdo</p>
+        <p>Conteúdo</p>
+        <p>Conteúdo</p>
+        <p>Conteúdo</p>
+        <p>Conteúdo</p>
+        <p>Conteúdo</p>
+        <p>Conteúdo</p>
+        <p>Conteúdo</p>
+        <p>Conteúdo</p>
+        <p>Conteúdo</p>
+        <p>Conteúdo</p>
+        <p>Conteúdo</p>
+        <p>Conteúdo</p>
+    </div>
+    <footer>
+        <div class="footer">
+            <p>frase</p>
+            <a href ="index.html">Linkedin</a>
+            <a class="marca">&lt;/&gt;</a>
+            <a href ="index.html">GitHub</a>
+            <a class="marca2">&lt;/&gt;</a>
+            <a href ="index.html">Instagram</a>
+            <br><br>
+            <a id="email" href="malito:martins.douglasm@gmail.com">martins.douglasm@gmail.com</a>
+            <p>&copy; 2022 All Rights Reserved to Douglas Martins</p>
+        </div>
+    </footer>
+</body>
