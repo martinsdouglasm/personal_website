@@ -96,21 +96,59 @@ nav#menu a:hover {
     align-self: flex-start;
 }
 
+#sobre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 155px;
+}
+
+#sobre p {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
 #projetos {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding-top: 105px;
-    margin-bottom: 50px;
+    padding-top: 155px;
 }
 
 .item {
     border-radius: 15px;
-    background-color: #fff;
+    background-color: #a6a6a6;
     display:flex ;
     width: 620px;
     height: 400px;
     margin: 20px;
+}
+
+.item:hover {
+    background-color: #fff;
+}
+
+#habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 100px;
+    margin-bottom: 50px;
+    width: 1330px;
+}
+
+.flex-progresso {
+    display: flex;
+    flex-direction: column;
+    margin: 60px;
+}
+
+.flex-progresso img {
+    width: 150px;
+}
+
+.flex-progresso progress {
+    width: 155px;
 }
 
 #footer {
@@ -120,8 +158,7 @@ nav#menu a:hover {
     position: absolute;
     left: 0px;
     text-align: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    border-top: #004aad solid 1px;
 }
 
 #footer a {
@@ -156,3 +193,5 @@ nav#menu a:hover {
     font-size: 11pt;
     color: #a6a6a6;
 }
+
+
