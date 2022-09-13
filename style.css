@@ -8,7 +8,6 @@ body {
 
 header {
     width: 100%;
-    height: 120px;
     background-color: #000;
     border-bottom: solid 1px  #62cd4c;     
     color: #fff;
@@ -21,11 +20,17 @@ header {
     align-items: center;
 }
 
-nav#menu {
-    display: flex;
+.caixa {
+    width: 940px;
+    height: 160px;
     position: relative;
-    justify-content: right;
-    min-width: 220px; 
+    margin: 0 auto;
+}
+
+nav#menu {
+    position: absolute;
+    top: 50px;
+    right: 0;
 }
 
 nav#menu ul {
@@ -50,7 +55,7 @@ nav#menu li {
 nav#menu a {
     color: #fff;
     text-decoration: none ;
-    transition: color 1s;
+    transition: color 600ms;
     font-family: 'Bebas Neue', cursive;
     font-size: 15pt;
 }
@@ -60,16 +65,24 @@ nav#menu a:hover {
 
 .apresentacao {
     display: flex;
+    width: 940px;
+    margin: 0 auto;
     flex-direction: row;
     justify-content: space-evenly;
     padding-bottom: 60px;
-    padding-top: 60px;
+    padding-top: 80px;
 }
 
 .texto {
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
     justify-content: center;
+}
+
+.texto h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40pt;
+    color: #fff;
+    text-shadow: 3px 3px 5px rgb(46, 46, 46);
 }
 
 .texto a {
@@ -85,22 +98,15 @@ nav#menu a:hover {
     text-align: center;
 }
 
-.texto h1 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 40pt;
-    color: #fff;
-    text-shadow: 3px 3px 5px rgb(46, 46, 46);
-}
-
 .apresentacao img {
-    align-self: flex-start;
+    margin-right: 0px;
 }
 
 #sobre {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding-top: 155px;
+    padding-top: 100px;
+    width: 940px;
+    margin: 0 auto;
 }
 
 #sobre p {
@@ -109,19 +115,23 @@ nav#menu a:hover {
 }
 
 #projetos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    width: 100%;
     padding-top: 155px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+#projetos h2 {
+    font-size: 18pt;
 }
 
 .item {
     border-radius: 15px;
     background-color: #a6a6a6;
     display:flex ;
-    width: 620px;
+    width: 940px;
+    margin: 20px auto;
     height: 400px;
-    margin: 20px;
 }
 
 .item:hover {
@@ -129,18 +139,29 @@ nav#menu a:hover {
 }
 
 #habilidades {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding-top: 100px;
+    padding-top: 120px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18pt;
+}
+
+.habilidades {
+    width: 940px;
+    margin: 0 auto;
     margin-bottom: 50px;
-    width: 1330px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .flex-progresso {
     display: flex;
     flex-direction: column;
-    margin: 60px;
+    margin: 40px;
+    width: min-content;
 }
 
 .flex-progresso img {
@@ -153,7 +174,7 @@ nav#menu a:hover {
 
 #footer {
     width: 100%;
-    height: 150px;
+    height: 160px;
     background-color: #141313;
     position: absolute;
     left: 0px;
@@ -194,4 +215,58 @@ nav#menu a:hover {
     color: #a6a6a6;
 }
 
+@media screen and (max-width: 480px) {
+    .caixa, .apresentacao, .item, .habilidades {
+        width: auto;
+    }
 
+    #sobre, #footer, #projetos {
+        width: auto;
+    }
+
+    header {
+        height: 200px;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    nav#menu {
+        justify-content: center;
+        display: flex;
+        position: fixed;
+        margin: 85px auto;
+        width: 370px;
+    }
+
+    nav#menu ul {
+        width: auto;
+    }
+
+    .apresentacao {
+        flex-direction: column;
+    }
+
+    .apresentacao img {
+        width: 80%;
+        margin: 30px auto;
+    }
+
+    #sobre {
+        padding-top: 0px;
+    }
+
+    #projetos {
+        padding-top: 170px;
+    }
+
+    h3 {
+        padding-top: 190px;
+    }
+
+    .flex-progresso {
+        margin: 12px;
+    }
+}
